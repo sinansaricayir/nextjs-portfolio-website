@@ -13,7 +13,7 @@ const Main = () => {
           <h1 className="py-4 text-gray-700">
             Hi, I`m <span className="text-[#5651e5]">Sinan</span>
           </h1>
-          <h1 className="py-2 text-gray-700">A Full Stack Web Developer</h1>
+          <h1 className="py-2 text-gray-700 animate-pulse">A Full Stack Web Developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             Software is more than just a profession for me; it is an endless
             curiosity and passion.
