@@ -10,7 +10,7 @@ const About = () => {
           <p className="py-4 text-gray-600">
             I am a full stack developer and I develop web applications and sites
             using many technologies such as HTML, CSS, JavaScript, Next.js,
-            React.js, Node.js, MongoDB, Laravel and MySQL. I've been working
+            React.js, Node.js, MongoDB, Laravel and MySQL. I`ve been working
             with these technologies for a long time and I always try to improve
             myself, learn new technologies and follow best practices.
           </p>
