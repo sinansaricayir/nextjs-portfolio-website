@@ -4,10 +4,14 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const router = useRouter();
 
   const handleNav = () => {
     setNav(!nav);
@@ -25,8 +29,24 @@ const Navbar = () => {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
+  useEffect(() => {
+    if (
+      router.asPath === "/posapp" ||
+      router.asPath === "/food" ||
+      router.asPath === "/scraping" ||
+      router.asPath === "/ecommerce"
+    ) {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
+
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -38,7 +58,7 @@ const Navbar = () => {
           <Image src="/assets/logo-color.svg" alt="" width={70} height={60} />
         </Link>
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/#main">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
@@ -59,8 +79,12 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-          <div className="md:hidden">
-            <AiOutlineMenu size={30} onClick={handleNav} />
+          <div
+            className="md:hidden"
+            style={{ color: `${linkColor}` }}
+            onClick={handleNav}
+          >
+            <AiOutlineMenu size={30} />
           </div>
         </div>
       </div>
@@ -96,19 +120,29 @@ const Navbar = () => {
             <div className="py-4 flex flex-col">
               <ul className="uppercase">
                 <Link href="/#main">
-                  <li className="py-4 text-sm">Home</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Home
+                  </li>
                 </Link>
                 <Link href="/#about">
-                  <li className="py-4 text-sm">About</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    About
+                  </li>
                 </Link>
                 <Link href="/#skills">
-                  <li className="py-4 text-sm">Skills</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Skills
+                  </li>
                 </Link>
                 <Link href="/#projects">
-                  <li className="py-4 text-sm">Projects</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Projects
+                  </li>
                 </Link>
                 <Link href="/#contact">
-                  <li className="py-4 text-sm">Contact</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Contact
+                  </li>
                 </Link>
               </ul>
               <div className="pt-40">

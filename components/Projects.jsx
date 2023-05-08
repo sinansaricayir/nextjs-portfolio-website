@@ -17,25 +17,25 @@ const Projects = () => {
             img={posApp}
             title="Pos Application Project"
             tech="MERN Stack"
-            url="https://ssa-pos-application.onrender.com"
+            url="/posapp"
           />
           <ProjectItem
             img={ecommerce}
             title="E-Commerce Website"
             tech="Html | Css | JavaScript"
-            url="https://commerce-project.netlify.app"
+            url="/ecommerce"
           />
           <ProjectItem
             img={food}
             title="Food Ordering Website"
             tech="Next.js"
-            url="https://github.com/sinansaricayir/nextjs-food-ordering"
+            url="/food"
           />
           <ProjectItem
             img={scraping}
             title="Web Scraping Project"
             tech="Node.js | Puppeteer | React.js"
-            url="https://github.com/sinansaricayir/web-scraping-nodejs-reactjs"
+            url="/scraping"
           />
         </div>
       </div>

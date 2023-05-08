@@ -1,6 +1,7 @@
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
+import Link from "next/link";
 
 const Main = () => {
   return (
@@ -21,18 +22,26 @@ const Main = () => {
             curiosity and passion.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
-              <FaLinkedinIn />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
-              <FaGithub />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
-              <AiOutlineMail />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
-              <BsFillPersonLinesFill />
-            </div>
+            <Link href="https://www.linkedin.com/in/sinansaricayir/">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
+                <FaLinkedinIn size={20} />
+              </div>
+            </Link>
+            <Link href="https://github.com/sinansaricayir">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
+                <FaGithub size={20} />
+              </div>
+            </Link>
+            <Link href="mailto:sinansaricayir@gmail.com">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
+                <AiOutlineMail size={20} />
+              </div>
+            </Link>
+            <Link href="https://api.whatsapp.com/send?phone=905348744444">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
+                <BsWhatsapp size={20} />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
