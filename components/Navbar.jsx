@@ -102,12 +102,14 @@ const Navbar = () => {
         >
           <div className="">
             <div className="w-full">
-              <Image
-                src="/assets/logo-color.svg"
-                alt=""
-                width={70}
-                height={60}
-              />
+              <Link href="/" onClick={() => setNav(false)}>
+                <Image
+                  src="/assets/logo-color.svg"
+                  alt=""
+                  width={70}
+                  height={60}
+                />
+              </Link>
               <div className="absolute top-2 right-2 border rounded-full p-3 shadow-lg shadow-gray-400 cursor-pointer">
                 <AiOutlineClose size={25} onClick={handleNav} />
               </div>
