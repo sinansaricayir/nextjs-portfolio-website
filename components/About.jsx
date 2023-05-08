@@ -8,18 +8,29 @@ const About = () => {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-4 text-gray-600">
-            I specialize in creating mobile responsive interface applications
-            and these applications connect with APIs and other backend
-            technologies. I am a fast learner as I am passionate about learning
-            new technologies and understand that there is more than one way to
-            accomplish a task.
+            I am a full stack developer and I develop web applications and sites
+            using many technologies such as HTML, CSS, JavaScript, Next.js,
+            React.js, Node.js, MongoDB, Laravel and MySQL. I've been working
+            with these technologies for a long time and I always try to improve
+            myself, learn new technologies and follow best practices.
           </p>
           <p className="py-7 text-gray-600">
-            While I am particularly skilled at building front-end applications
-            using HTML, CSS, Javascript, and React, I can quickly learn new
-            technology stacks when needed. I believe that being great as a
-            developer is not using a particular language, but choosing the best
-            tool.
+            I have extensive experience in front-end and back-end development. I
+            create the look and user interfaces of websites and applications
+            with HTML and CSS. I also make websites dynamic and interactive with
+            JavaScript, React.js and Next.js. I also manage the back-end of
+            websites with Node.js and Laravel. I am proficient in many database
+            technologies such as MongoDB and MySQL in database management.
+          </p>
+          <p className="py-7 text-gray-600">
+            The most important thing to me is understanding the needs of my
+            customers and choosing the right technologies to best meet those
+            needs. I always prioritize customer satisfaction and work to deliver
+            projects on time.
+          </p>
+          <p className="py-7 text-gray-600">
+            If you want to develop a web project or application, do not hesitate
+            to contact me. Let`s bring your projects to life together.
           </p>
         </div>
         <div className="w-full h-auto m-auto shadow-2xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
