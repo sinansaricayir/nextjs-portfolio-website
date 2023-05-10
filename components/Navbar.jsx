@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
@@ -110,8 +110,11 @@ const Navbar = () => {
                   height={60}
                 />
               </Link>
-              <div className="absolute top-2 right-2 border rounded-full p-3 shadow-lg shadow-gray-400 cursor-pointer">
-                <AiOutlineClose size={25} onClick={handleNav} />
+              <div
+                onClick={handleNav}
+                className="absolute top-2 right-2 border rounded-full p-3 shadow-lg shadow-gray-400 cursor-pointer"
+              >
+                <AiOutlineClose size={25} />
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
@@ -153,18 +156,27 @@ const Navbar = () => {
                 </p>
               </div>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                  <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                  <BsFillPersonLinesFill />
-                </div>
+                <Link href="https://www.linkedin.com/in/sinansaricayir/">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
+                    <FaLinkedinIn size={20} />
+                  </div>
+                </Link>
+                <Link href="https://github.com/sinansaricayir">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
+                    <FaGithub size={20} />
+                  </div>
+                </Link>
+                <Link href="mailto:sinansaricayir@gmail.com">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
+                    <AiOutlineMail size={20} />
+                  </div>
+                </Link>
+
+                <Link href="https://api.whatsapp.com/send?phone=905348744444">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
+                    <BsWhatsapp size={20} />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
