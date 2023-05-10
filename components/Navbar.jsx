@@ -155,25 +155,25 @@ const Navbar = () => {
                   Let`s Connect
                 </p>
               </div>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+              <div className="flex items-center justify-between my-4 w-full sm:w-[80%] gap-1">
                 <Link href="https://www.linkedin.com/in/sinansaricayir/">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-500">
                     <FaLinkedinIn size={20} />
                   </div>
                 </Link>
                 <Link href="https://github.com/sinansaricayir">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-500">
                     <FaGithub size={20} />
                   </div>
                 </Link>
                 <Link href="mailto:sinansaricayir@gmail.com">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-500">
                     <AiOutlineMail size={20} />
                   </div>
                 </Link>
 
                 <Link href="https://api.whatsapp.com/send?phone=905348744444">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-500">
                     <BsWhatsapp size={20} />
                   </div>
                 </Link>
