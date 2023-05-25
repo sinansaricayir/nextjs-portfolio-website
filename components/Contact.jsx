@@ -3,8 +3,24 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
+import { useState } from "react";
+import { toast } from "react-toastify";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    //mail provider will be added
+    toast.success(`Thanks ${name} for your message, have a nice day :)`, {
+      autoClose: 2000,
+    });
+  };
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -59,11 +75,12 @@ const Contact = () => {
           </div>
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
                     <input
+                      onChange={(e) => setName(e.target.value)}
                       type="text"
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                     />
@@ -73,6 +90,7 @@ const Contact = () => {
                       Phone Number
                     </label>
                     <input
+                      onChange={(e) => setPhone(e.target.value)}
                       type="text"
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                     />
@@ -81,6 +99,7 @@ const Contact = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
+                    onChange={(e) => setEmail(e.target.value)}
                     type="text"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                   />
@@ -88,6 +107,7 @@ const Contact = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Subject</label>
                   <input
+                    onChange={(e) => setSubject(e.target.value)}
                     type="text"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                   />
@@ -95,11 +115,15 @@ const Contact = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
+                    onChange={(e) => setMessage(e.target.value)}
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows="10"
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">
+                <button
+                  className="w-full p-4 text-gray-100 mt-4 bg-[#5651e5]"
+                  type="submit"
+                >
                   Send Message
                 </button>
               </form>

@@ -70,6 +70,11 @@ const food = () => {
             <Link href="https://ssa-pos-application.onrender.com">Demo</Link>
           </button> */}
             <button className="px-8 py-2 mt-4">
+              <Link href="https://next-food-ordering-ssa.vercel.app">
+                Demo
+              </Link>
+            </button>
+            <button className="px-8 py-2 mt-4 ml-4">
               <Link href="https://github.com/sinansaricayir/nextjs-food-ordering">
                 Code
               </Link>
@@ -78,7 +83,7 @@ const food = () => {
           <div className="col-span-4 md:col-span-1 shadoow-xl shadow-gray-400 rounded-xl p-4">
             <div className="p-2">
               <p className="text-center font-bold mb-2 text-xl">
-                {" "}
+                
                 Technologies
               </p>
               <div className="grid md:grid-cols-1  grid-cols-3">
