@@ -9,8 +9,8 @@ const About = () => {
           <h2 className="py-4">Who I Am</h2>
           <p className="py-4 text-gray-600">
             I am a full stack developer and I develop web applications and sites
-            using many technologies such as HTML, CSS, JavaScript, Next.js,
-            React.js, Node.js, MongoDB, Laravel and MySQL. I`ve been working
+            using many technologies such as HTML, CSS, JavaScript, Vue.js, Next.js,
+            React.js, Node.js, MongoDB, Laravel, MySQLand PostgreSQL. I`ve been working
             with these technologies for a long time and I always try to improve
             myself, learn new technologies and follow best practices.
           </p>
@@ -20,7 +20,7 @@ const About = () => {
             with HTML and CSS. I also make websites dynamic and interactive with
             JavaScript, React.js and Next.js. I also manage the back-end of
             websites with Node.js and Laravel. I am proficient in many database
-            technologies such as MongoDB and MySQL in database management.
+            technologies such as MongoDB, MySQL and PostgreSQL in database management.
           </p>
           <p className="py-7 text-gray-600">
             The most important thing to me is understanding the needs of my
